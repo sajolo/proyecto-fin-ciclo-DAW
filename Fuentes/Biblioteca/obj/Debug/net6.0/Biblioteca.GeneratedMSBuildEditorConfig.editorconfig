@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Biblioteca
+build_property.RootNamespace = Biblioteca
+build_property.ProjectDir = D:\ESTUDIOS\DESARROLLO DE APLICACIONES WEB\2º\Proyecto de Fin de Ciclo\Proyecto Fin de Ciclo - Saúl Jorge López\Fuentes\Biblioteca\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ESTUDIOS\DESARROLLO DE APLICACIONES WEB\2º\Proyecto de Fin de Ciclo\Proyecto Fin de Ciclo - Saúl Jorge López\Fuentes\Biblioteca
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Libro/CrearLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cQ3JlYXJMaWJyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Libro/DetallesLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRGV0YWxsZXNMaWJyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Libro/EditarLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRWRpdGFyTGlicm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Libro/EliminarLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRWxpbWluYXJMaWJyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Libro/ListaLibros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cTGlzdGFMaWJyb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Usuario/CrearUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhclVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Usuario/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Usuario/EliminarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFbGltaW5hclVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Usuario/GestionUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xHZXN0aW9uVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Usuario/MiCuenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xNaUN1ZW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ESTUDIOS/DESARROLLO DE APLICACIONES WEB/2º/Proyecto de Fin de Ciclo/Proyecto Fin de Ciclo - Saúl Jorge López/Fuentes/Biblioteca/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bunr9m1pqn

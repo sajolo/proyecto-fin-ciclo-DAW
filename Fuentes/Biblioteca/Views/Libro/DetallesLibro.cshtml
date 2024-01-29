@@ -1,0 +1,63 @@
+﻿@model Biblioteca.Models.Libro
+
+@{
+    ViewData["Title"] = "DetallesLibro";
+}
+
+<h1>DetallesLibro</h1>
+
+@if (TempData["ErrorMensaje"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMensaje"]
+    </div>
+}
+
+@if (TempData["SuccessMensaje"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMensaje"]
+    </div>
+}
+
+<h2>Libro</h2>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Titulo)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Titulo)
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Autor)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Autor)
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.AnhoPublicacion)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.AnhoPublicacion)
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Prestado)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Prestado)
+    </dd>
+</dl>
+
+<div>
+    <a asp-action="EditarLibro" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="PedirPrestado" asp-route-id="@Model.Id" class="btn btn-primary">Pedir prestado</a>
+    <a asp-action="EliminarLibro" asp-route-id="@Model.Id" class="btn btn-danger">Eliminar</a>
+</div>
+<br />
+<a asp-action="ListaLibros" class="btn btn-secondary">Volver a la lista</a>
+

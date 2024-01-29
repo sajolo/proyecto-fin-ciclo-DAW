@@ -1,0 +1,42 @@
+﻿@model Biblioteca.Models.Usuario
+
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+
+<h1>Eliminar Usuario</h1>
+
+<h4>@Model.Nombre</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h3>¿Estás seguro de que quieres eliminar este usuario?</h3>
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+            <dt class="col-sm-4">
+                Administrador
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Rol)
+            </dd>
+        </dl>
+        <form asp-action="EliminarUsuario">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <input type="submit" value="Eliminar" class="btn btn-danger me-3" />
+                <a asp-action="GestionUsuarios" class="btn btn-secondary">Volver a la lista</a>
+            </div>
+        </form>
+    </div>
+</div>

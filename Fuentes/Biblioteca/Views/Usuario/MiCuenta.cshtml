@@ -1,0 +1,92 @@
+﻿@model Biblioteca.Models.UsuarioConLogsViewModel
+
+@{
+    ViewData["Title"] = "Mi Cuenta";
+}
+
+<style>
+    .profile-pic {
+        width: 150px; /* Ancho fijo para la imagen */
+        height: 150px; /* Altura fija para la imagen */
+        border-radius: 50%; /* Hace la imagen circular */
+        object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+        object-position: center; /* Centra la imagen dentro del elemento */
+        border: 3px solid #ddd; /* Un borde suave */
+        background-color: #f3f3f3; /* Un color de fondo en caso de que la imagen no cargue */
+        display: block; /* Esto asegura que la imagen no sea inline */
+        margin: 0 auto; /* Esto centra la imagen en el contenedor si es más pequeña que el espacio disponible */
+    }
+</style>
+
+<div class="row" style="justify-content:center">
+    <!-- Perfil de usuario -->
+    <div class="col-md-4">
+        <div class="card">
+            <img class="profile-pic" src="~/images/default-profile.png" alt="Foto de perfil">
+            <div class="card-body">
+                <h4 class="card-title">@Model.Usuario.Nombre</h4>
+                <p class="card-text">Fecha de registro: @DateTime.Now.ToString("dd MMM yyyy")</p> <!-- Fecha ficticia por ahora -->
+                <p class="card-text">
+                    @if (Model.Usuario.Rol)
+                    {
+                        <span class="badge bg-info">Administrador</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Usuario</span>
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lista de libros prestados -->
+    <div class="col-md-4">
+        <div class="card mt-3">
+            <div class="card-header">
+                Libros Prestados Actualmente
+            </div>
+            <ul class="list-group list-group-flush">
+                @foreach (var libroPrestado in Model.LibrosPrestados)
+                {
+                    <li class="list-group-item">
+                        @libroPrestado.Libro.Titulo
+                        <small class="text-muted">
+                            - Prestado el @libroPrestado.FechaPrestamo.ToString("dd MMM yyyy")
+                        </small>
+                    </li>
+                }
+                @if (!Model.LibrosPrestados.Any())
+                {
+                    <li class="list-group-item">No tienes libros prestados actualmente.</li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <!-- Logs de usuario -->
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Actividad Reciente
+            </div>
+            <ul class="list-group list-group-flush">
+                @foreach (var log in Model.LogsRecientes)
+                {
+                    <li class="list-group-item">
+                        @log.Descripcion -
+                        <small class="text-muted">
+                            Hace @((DateTime.Now - log.FechaAccion).TotalDays.ToString("0")) días
+                        </small>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+
+    </script>
+}

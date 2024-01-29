@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Biblioteca.Models.Libro>
+ViewBag.CurrentFilter = searchString;
+
+
+@{
+    ViewData["Title"] = "ListaLibros";
+}
+
+<h1>Libros de la Biblioteca</h1>
+
+<p>
+    <a asp-action="CrearLibro" class="btn btn-primary">Crear Nuevo</a>
+</p>
+
+@using (Html.BeginForm("ListaLibros", "Libro", FormMethod.Get))
+{
+    <p>
+        Búsqueda por título o autor:
+        <input type="text" name="searchString" value="@ViewBag.CurrentFilter" />
+        <input type="submit" value="Filtrar" class="btn btn-default" />
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                Año de publicación
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prestado)
+            </th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Autor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnhoPublicacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prestado)
+                </td>
+                <td>
+                    <a asp-action="EditarLibro" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="DetallesLibro" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Detalles</a>
+                    <a asp-action="EliminarLibro" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
